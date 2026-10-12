@@ -1,0 +1,6 @@
+site_name: svc-pedidos
+site_description: Pedidos de la tienda de demostración
+nav:
+  - Inicio: index.md
+plugins:
+  - techdocs-core

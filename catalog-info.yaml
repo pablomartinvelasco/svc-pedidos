@@ -1,0 +1,28 @@
+# Entidad del catálogo de Backstage (RF-01). El portal la lee de este repositorio.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: svc-pedidos
+  title: Pedidos
+  description: API REST para consultar y registrar pedidos de la tienda de demostración.
+  tags:
+    - go
+    - rest
+    - ejemplo
+  annotations:
+    github.com/project-slug: pablomartinvelasco/svc-pedidos
+    backstage.io/techdocs-ref: dir:.
+    # Los recursos de Kubernetes llevan la etiqueta backstage.io/kubernetes-id con este valor.
+    backstage.io/kubernetes-id: svc-pedidos
+  links:
+    - url: http://svc-pedidos.dev.localtest.me
+      title: Entorno dev
+    - url: http://svc-pedidos.staging.localtest.me
+      title: Entorno staging
+    - url: https://github.com/pablomartinvelasco/idp-tfg/tree/main/gitops/apps/svc-pedidos
+      title: Configuración de despliegue (GitOps)
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/equipo-pedidos
+  system: tienda-demo
