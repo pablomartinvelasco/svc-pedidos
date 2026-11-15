@@ -21,6 +21,10 @@ metadata:
       title: Entorno staging
     - url: https://github.com/pablomartinvelasco/idp-tfg/tree/main/gitops/apps/svc-pedidos
       title: Configuración de despliegue (GitOps)
+    - url: http://argocd.localtest.me/applications/argocd/svc-pedidos-dev
+      title: Argo CD (dev)
+    - url: http://argocd.localtest.me/applications/argocd/svc-pedidos-staging
+      title: Argo CD (staging)
 spec:
   type: service
   lifecycle: experimental
